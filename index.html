@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Blog Test</title>
+  <link rel="shortcut icon" href="favicon.png">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/blog-post.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <!-- <nav class="navbar ">
+    <div class="">
+     
+    </div>
+  </nav> -->
+
+  <!-- Page Content -->
+  <div class="container-fluid">
+
+    <div class="row">
+      <!-- <div class="col-md-12">
+        <img src="https://s3.us-west-2.amazonaws.com/machrus/doc_pictures/1601430916.png" alt="" style="background: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.733), rgb(255, 255, 255))">
+      </div> -->
+      <div class="col-md-12">
+      <div class="headerblog" style="background: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.733), rgb(255, 255, 255)), url(&quot;https://s3.us-west-2.amazonaws.com/machrus/doc_pictures/1601430916.png&quot;) center 38% / cover no-repeat;">
+        <div class="dashboardSpecial">
+          <div class="titleHeader">
+            <strong>Pengumuman Pemenang Kompetisi MAPID</strong>
+          </div>
+        </div>
+      </div>
+ </div>
+      <!-- Sidebar Widgets Column -->
+ <div class="col-md-3">
+
+  <!-- Search Widget -->
+  <div id="head" class="col-md-3 scrollSidebar" >
+    <div id="mySidebar" class="sidebar" style="left: 2vw;">
+      <div style="margin-bottom: 500px;">
+          <div style="text-align: center;"><div class="buttonShadow">BLOG</div></div>
+          <div id="usatu"> 
+           
+          </div>
+    
+      </div>
+  </div>
+  <div class="openbtn scrollOpenbtn" id="buttonSlider" style="z-index: 2; margin-left: calc(((2vw + 245px) - 20px) / 2);">&lt;</div>
+  
+  </div>
+
+</div>
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <!-- <h1 class="mt-4">Post Title</h1> -->
+        <!-- Author -->
+        <!-- <p class="lead">
+          by
+          <a href="#">Start Bootstrap</a>
+        </p> -->
+        <div style="margin-top: 30px;">
+        <div class="fotolabel"></div>
+        <div style="display: inline-block; vertical-align: middle; margin-left: 10px; font-size: 17px; color: black;">Team MAPID<br>
+        <div style="font-size: 12px; color: black;">Sep 30 2020</div>
+        </div>
+       
+          </div>
+        <hr>
+
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+
+        <hr>
+
+        <!-- Post Content -->
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
+
+        <blockquote class="blockquote">
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">Someone famous in
+            <cite title="Source Title">Source Title</cite>
+          </footer>
+        </blockquote>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
+
+        <hr>
+
+      
+
+      </div>
+
+     
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+<script>
+$(function() {
+  var header = $("#mySidebar");
+  var bs = $("#buttonSlider");
+
+  $(window).scroll(function() {    
+      var scroll = $(window).scrollTop();
+  
+      if (scroll >= 100) {
+          header.addClass('stickySidebar').removeClass("scrollSidebar");
+          bs.addClass('stickyOpenbtn').removeClass("scrollOpenbtn");
+          
+      }else if(scroll == 0){
+        bs.removeClass('scrollOpenbtn').addClass("scrollOpenbtn");
+
+      }else{
+        header.removeClass('stickySidebar').addClass("scrollSidebar");
+        bs.removeClass('stickyOpenbtn').addClass("scrollOpenbtn");
+
+
+      }
+  });
+});
+// get data api
+
+    
+$(document).ready(function(){
+  var url = "https://api.mapid.io/blog/get_bracket/blog";
+  var urlartikel = "https://api.mapid.io/blog/get_list_docs_public/blog";
+
+  $.ajax({
+    dataType:'json',
+    url:url,
+    success: function(datas){
+      var result = '';
+      $.each(datas.sub_brackets, function(i, item) {
+        result += `<div class="buttonTableOfContent parentTableOfContent">
+                <div class="textTableOfContent">`+datas.sub_brackets[i].name+`</div>
+              </div>
+              <div id="satu`+[i]+`">
+                 
+                </div>`;
+        
+      });
+      $('#usatu').append(result);
+    }
+  });
+});
+
+$(document).ready(function(){
+  var urlmenu= "https://api.mapid.io/blog/get_list_docs_public/blog";
+  $.ajax({
+    dataType:'json',
+    url:urlmenu,
+    success: function(datas){
+      // console.log(datas[0].sub_bracket);
+      var result0 = '';
+      var result1 = '';
+      var result2 = '';
+      var result3 = '';
+      var result4 = '';
+      
+
+      $.each(datas, function(i, item) {
+        if (datas[i].sub_bracket == 'seminar'){
+          result0 += `<a class="buttonTableOfContent docList" id="not-activated" href="`+datas[i].link+`"><div class="textTableOfContent">`+datas[i].title+`</div></a>`; 
+        }else if (datas[i].sub_bracket == 'achievement'){
+          result1 += `<a class="buttonTableOfContent docList" id="not-activated" href="`+datas[i].link+`"><div class="textTableOfContent">`+datas[i].title+`</div></a>`; 
+        }else if (datas[i].sub_bracket == 'news'){
+          result2 += `<a class="buttonTableOfContent docList" id="not-activated" href="`+datas[i].link+`"><div class="textTableOfContent">`+datas[i].title+`</div></a>`; 
+        }else if (datas[i].sub_bracket == 'partnership'){
+          result3 += `<a class="buttonTableOfContent docList" id="not-activated" href="`+datas[i].link+`"><div class="textTableOfContent">`+datas[i].title+`</div></a>`; 
+        }else if (datas[i].sub_bracket == 'teknis_kompetisi_mapid'){
+          result4 += `<a class="buttonTableOfContent docList" id="not-activated" href="`+datas[i].link+`"><div class="textTableOfContent">`+datas[i].title+`</div></a>`; 
+        }
+      });
+      $('#satu0').append(result0);
+      $('#satu1').append(result1);
+      $('#satu2').append(result2);
+      $('#satu3').append(result3);
+      $('#satu4').append(result4);
+    }
+  });
+});
+
+$('#buttonSlider').click(function(){  
+            $('#mySidebar').slideToggle('slow');
+            
+        });
+</script>
+</html>

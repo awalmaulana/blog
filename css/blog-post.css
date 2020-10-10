@@ -1,0 +1,202 @@
+/*!
+ * Start Bootstrap - Blog Post (https://startbootstrap.com/templates/blog-post)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-blog-post/blob/master/LICENSE)
+ */
+ body{
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  -webkit-font-smoothing: antialiased;
+ }
+.stickySidebar {
+  position: fixed;
+  top: 100px;
+}
+.stickySidebar {
+  position: fixed;
+  top: 100px;
+}
+.scrollSidebar {
+  position: fixed;
+  top: 450px;
+}
+.scrollOpenbtn {
+  position: fixed;
+  top: 430px;
+  z-index: 2; margin-left: 2vw; 
+}
+.stickyOpenbtn {
+  position: fixed;
+  top: 80px;
+  z-index: 2; 
+  margin-left: calc(((2vw + 245px) - 20px) / 2);
+
+}
+
+.sidebar {
+  height: 80vh;
+  width: 300px;
+  max-width: 80vw;
+  left: 2vw;
+  z-index: 2;
+  scrollbar-color:yellow;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  margin-bottom: 1000px;
+  margin-right: 10px;
+  padding: 40px 18px 10px;
+  transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  background-color: #e4e4e4;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+.parentTableOfContent {
+  background-color: #2196f3;
+  color: #fff;
+  margin-top: 20px;
+}
+.buttonTableOfContent {
+  text-align: left;
+  display: block;
+  overflow-x: hidden;
+  border-radius: .5rem .5rem .5rem .5rem;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  color: #565656;
+  box-shadow: 0 0 6px hsla(0,0%,61.6%,.33);
+  -webkit-box-shadow: 0 0 6px hsla(0,0%,61.6%,.33);
+  -moz-box-shadow: 0 0 6px hsla(0,0%,61.6%,.33);
+  padding: 10px 10px 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.buttonShadow {
+  text-align: center;
+  display: inline-block;
+  border-radius: 2rem 2rem 2rem 2rem;
+  background-color: #fff;
+  color: #565656;
+  padding: 8px 24px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.buttonShadow, .sidebar {
+  border: 1px solid #d8d8d8;
+  box-shadow: 0 0 6px hsla(0,0%,61.6%,.33);
+  -webkit-box-shadow: 0 0 6px hsla(0,0%,61.6%,.33);
+  -moz-box-shadow: 0 0 6px hsla(0,0%,61.6%,.33);
+}
+.openbtn{
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 50% 50% 50% 50%;
+  background-color: #2ca1fd;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bolder;
+  border: 1px solid #d8d8d8;
+  box-shadow: 0 0 6px hsla(0,0%,61.6%,.33);
+  -webkit-box-shadow: 0 0 6px hsla(0,0%,61.6%,.33);
+  -moz-box-shadow: 0 0 6px hsla(0,0%,61.6%,.33);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: calc((2vw + 245px)/2);
+  z-index: 1;
+  transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+}
+.headerblog{
+  width:100%;    
+  display: block;
+  min-height: 500px;
+  position: relative;
+  
+}
+.stickySidebar {
+  position: fixed;
+  top: 100px;
+}
+.textTableOfContent {
+  line-height: 12.5pt;
+  letter-spacing: .025em;
+}
+.docList {
+  margin-top: 7px;
+}
+#not-activated {
+  color: #565656;
+}
+
+.parentTableOfContent {
+  background-color: #2196f3;
+  color: #fff;
+  margin-top: 20px;
+}
+.titleHeader{
+  font-weight: bolder;
+  color: #000;
+  line-height: 110%;
+  position: absolute;
+  top: 70%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.fotolabel{
+    background: url(https://s3.us-west-2.amazonaws.com/machrus/profile_picture/iotmapid/iotmapid_1571800452566.jpeg) no-repeat center center/ cover;
+    background-color: #dcdcdc;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid #b0b0b0;
+    box-shadow: 0 0 12px #0000004e;
+    -webkit-box-shadow: 0 0 12px #0000004e;
+    -moz-box-shadow: 0 0 12px #0000004e;
+}
+  
+/* media query */
+@media (min-width: 1150px){
+  .titleDocument {
+    font-size: 65px;
+}
+}
+@media (min-width: 1025px){
+  .titleDocument {
+    font-size: 65px;
+}
+}
+@media (min-width: 801px){
+  .titleDocument {
+    font-size: 50px;
+}
+}
+@media (min-width: 600px){
+  .titleDocument {
+    font-size: 50px;
+}
+}
+@media (min-width: 480px){
+  .titleDocument {
+    font-size: 50px;
+}
+}
+
+@media (min-width: 1281px){
+.titleHeader {
+    font-size: 65px;
+}
+.dashboardSpecial {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+}
+@media (min-width: 320px){
+.titleDocument {
+    font-size: 30px;
+}
+}
